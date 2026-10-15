@@ -91,7 +91,7 @@
     p.style.lineHeight = still ? "1.15" : rand(1, 1.3).toFixed(2);
     p.style.textAlign = "left";   // always left (user, 2026-10-14)
     faceLabel.textContent = font;
-    document.title = PIECES[i].text + " · badvice";
+    document.title = PIECES[i].text + " · badvice 🫵";
     fit();
     p.classList.remove("out");
     // a face that finishes loading after the first fit has different widths: fit again once it's in

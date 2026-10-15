@@ -10,7 +10,7 @@ body {
 main {
   box-sizing: border-box;
   height: 100vh; height: 100dvh;
-  padding: max(6vmin, 16px) max(7vmin, 16px) max(8vmin, 44px);
+  padding: max(7vmin, 44px) max(7vmin, 16px) max(8vmin, 44px);
   display: flex; align-items: center;
   overflow: hidden;
 }
@@ -26,6 +26,11 @@ main p.out { opacity: 0; }
   font: 11px/1 ui-monospace, Menlo, monospace;
   color: inherit; opacity: .45; text-decoration: none;
 }
+/* the heading: the name and its 🫵, small and quiet like the footer, the 🫵 a little bigger (user, 2026-10-15) */
+#top { position: fixed; left: 12px; top: 10px; margin: 0; font: 13px/1 ui-monospace, Menlo, monospace; opacity: .7; }
+#top a { color: inherit; text-decoration: none; padding: 6px 2px; margin: -6px -2px; }
+#top a:hover { opacity: 1; }
+#top .point { font-size: 1.5em; vertical-align: -.15em; margin-left: .1em; }
 #home {
   position: fixed; left: 12px; bottom: 10px; margin: 0;
   font: 11px/1.45 ui-monospace, Menlo, monospace;   /* two lines: the credit, then the landing page's address */
