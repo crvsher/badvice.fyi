@@ -57,7 +57,8 @@
   // largest size at which the piece fits the window without any word poking out the side
   function fit() {
     const p = main.querySelector("p");
-    const h = main.clientHeight - parseFloat(getComputedStyle(main).paddingTop) * 2;
+    const cs = getComputedStyle(main);
+    const h = main.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
     let lo = 12, hi = 400;
     for (let i = 0; i < 20; i++) {
       const s = (lo + hi) / 2;
