@@ -10,7 +10,7 @@ body {
 main {
   box-sizing: border-box;
   height: 100vh; height: 100dvh;
-  padding: max(7vmin, 44px) max(7vmin, 16px) max(8vmin, 44px);
+  padding: max(7vmin, 44px) max(7vmin, 16px) calc(max(8vmin, 44px) + 2.9em);   /* room for the three addresses under the credit */
   display: flex; align-items: center;
   overflow: hidden;
 }
