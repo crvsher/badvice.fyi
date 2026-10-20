@@ -10,7 +10,7 @@ body {
 main {
   box-sizing: border-box;
   height: 100vh; height: 100dvh;
-  padding: max(7vmin, 44px) max(7vmin, 16px) calc(max(8vmin, 44px) + 2.9em);   /* room for the three addresses under the credit */
+  padding: max(7vmin, 44px) max(7vmin, 16px) max(8vmin, 44px);
   display: flex; align-items: center;
   overflow: hidden;
 }
@@ -39,11 +39,3 @@ main p.out { opacity: 0; }
 #home a { color: inherit; padding: 6px 2px; margin: -6px -2px; }   /* a bigger tap target on phones */
 #home a:hover { opacity: 1; }
 
-/* the addresses: stacked (the site, then the mirror) until there's room for one line across the foot, then the
-   site on the left and the mirror on the right (user, 2026-10-19) */
-@media (min-width: 520px) {
-  .addrs { display: flex; justify-content: space-between; gap: 0 24px; }
-  .addrs br { display: none; }
-  #home { right: 12px; }
-  #face { bottom: calc(10px + 1.45 * 11px); }   /* up beside the credit, out of the addresses' way */
-}
